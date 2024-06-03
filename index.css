@@ -1,0 +1,160 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@font-face {
+    font-family: "LeagueSpartan";
+    src: url(LeagueSpartan-VariableFont_wght.ttf);
+}
+/* header */
+header{
+    height: 100px;
+    background-color: #6DA7D9;
+    padding: 0 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: "LeagueSpartan";
+    padding: 0 10px;
+    transition: 0.4s;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none; 
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #545454;
+}
+#check{
+    display: none;
+}
+/*banner*/ 
+#banner{
+    padding: 0 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("humboldt_aereo.jpg");
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner::before{
+    content: " ";
+   /* background: rgba(77, 77, 92, 0.6);*/
+    position: absolute;
+    width: 100%;
+    height: 55vh;
+    left: 0;
+}
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.contenido-banner h3 span{
+    font-weight: 600;
+
+}
+.contenido-banner{
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* destacados */
+#destacados{
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#destacados div{
+    padding: 30px 30px;
+    background-color: #6DA7D9;
+    border-radius: 30px;
+    margin: 10px;
+}
+#destacados div h4{
+    color: white;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+#destacados div p{
+    color: white;
+    font-size: 18px;
+
+}
+.boton-saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border: 3px solid #BE3036;
+    border-radius: 30px;
+    margin-top: 15px;
+    background-color: #BE3036;
+    transition: all 0.4s;
+}
+.boton-saber-mas:hover{
+    border: 3px solid #BE3036;
+    background-color: #6DA7D9;
+    color: #BE3036;
+}
+.titulo_destacados{
+    padding: 0px 50px;
+    font-size: 20px;
+    margin: 15px 0px;
+    color: #545454;
+}
+/* responsive */
+@media(max-width: 768px ){
+    /* header */
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #6DA7D9;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    /* destacados */
+    #destacados{
+        flex-direction: column;
+    }
+}
