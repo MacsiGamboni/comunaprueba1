@@ -172,11 +172,22 @@ header{
     padding-bottom: 50px;
 
 }
+.boton-saber-mas-telefonos-responsive{
+    color: #545454;
+    text-decoration: none;
+    font-family: "LeagueSpartan";
+    padding: 0 10px;
+    transition: 0.4s;
+}
+.boton-telefonos-responsive{
+    text-align: center;
+    display: none;
+    
+}
 /* footer */
 footer{
     background: #545454;
     height: 100;
-
     padding-top: 40px;
     color: white;
 }
@@ -228,5 +239,20 @@ footer{
     }
     #destacados p{
         display: none;
+    }
+    /* telefonos */
+    .I-T{
+        display: none;
+    }
+    .boton-telefonos{
+        display: none;
+    }
+    .boton-telefonos-responsive{
+        display: flex;
+        
+    }
+    .titulo_destacados{
+        display: flex;
+        flex-direction: column;
     }
 }
