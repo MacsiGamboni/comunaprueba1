@@ -8,6 +8,7 @@
     font-family: "LeagueSpartan";
     src: url(LeagueSpartan-VariableFont_wght.ttf);
 }
+
 /* header */
 header{
     height: 100px;
@@ -122,6 +123,71 @@ header{
     margin: 15px 0px;
     color: #545454;
 }
+/* telefonos*/
+.I-T{
+    display: flex;
+}
+#telefonos{
+    padding: 0px 50px;
+}
+.contenido-telefonos{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+.contenido-telefonos div{
+    flex: 1;
+    margin: 0.5px 0px;
+    
+}
+.contenido-telefonos h6{
+    color: #545454;
+    font-weight: 100px;
+    margin-left: 10px;
+}
+.contenido-telefonos p{
+    color: #848181;
+    font-weight: 100px;
+    margin-left: 10px;
+}
+.boton-saber-mas-telefonos{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border: 3px solid #BE3036;
+    border-radius: 30px;
+    margin-top: 15px;
+    background-color: #BE3036;
+    transition: all 0.4s;
+}
+.boton-saber-mas-telefonos:hover{
+    border: 3px solid #BE3036;
+    background-color: white;
+    color: #BE3036;
+}
+.boton-telefonos{
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+/* footer */
+footer{
+    background: #545454;
+    height: 100;
+
+    padding-top: 40px;
+    color: white;
+}
+.footer-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 40px;
+}
 /* responsive */
 @media(max-width: 768px ){
     /* header */
@@ -156,5 +222,11 @@ header{
     /* destacados */
     #destacados{
         flex-direction: column;
+    }
+    #destacados h4{
+        display: none;
+    }
+    #destacados p{
+        display: none;
     }
 }

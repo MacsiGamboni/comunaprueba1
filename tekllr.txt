@@ -1,0 +1,67 @@
+
+<section id="telefonos">
+        <div class="contenido-telefonos">
+            <div class="I-T">
+                <img src="img/iconos/samco.png" alt="">
+               <div>
+                    <h6>SAMCO</h6>
+                    <p>3496 556735</p>
+               </div>
+            </div>
+            <div class="I-T">
+                <img src="img/iconos/policia.png" alt="">
+                <div>
+                    <h6>Policia</h6>
+                    <p>3496 556735</p>
+                </div>
+            </div >
+            <div class="I-T">
+                <img src="img/iconos/violencia_genero.png" alt="">
+                <div>
+                    <h6>Violencia de genero</h6>
+                    <p>3496 556735</p>
+                </div>
+            </div>
+            <div class="I-T">
+                <img src="img/iconos/comuna.png" alt="">
+                <div>
+                    <h6>Comuna</h6>
+                    <p>3496 556735</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="contenido-telefonos">
+            <div class="I-T">
+                <img src="img/iconos/juzgado.png" alt="">
+                <div>
+                    <h6>Juzgado de faltas</h6>
+                    <p>3496 556735</p>
+                </div>
+            </div>
+            <div class="I-T">
+                <img src="img/iconos/terminal.png" alt="">
+                <div>
+                    <h6>Terminal de omnibus</h6>
+                    <p>3496 556735</p>
+                </div>
+            </div>
+            <div class="I-T">
+                <img src="img/iconos/bombero.png" alt="">
+                <div>
+                    <h6>Bomberos Voluntarios</h6>
+                    <p>3496 556735</p>
+                </div>
+            </div>
+            <div class="I-T">
+                <img src="img/iconos/epe.png" alt="">
+                <div>
+                    <h6>EPE</h6>
+                    <p>3496 556735</p>
+                </div>
+            </div>
+        </div>
+        <div class="boton-telefonos">
+            <a href="telefonos.html" class="boton-saber-mas-telefonos">Ver todos</a>
+        </div>
+    </section>
