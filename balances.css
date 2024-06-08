@@ -8,6 +8,7 @@
     font-family: "LeagueSpartan";
     src: url(LeagueSpartan-VariableFont_wght.ttf);
 }
+
 /* header */
 header{
     height: 100px;
@@ -43,7 +44,6 @@ header{
 #check{
     display: none;
 }
-
 /*banner*/ 
 #banner{
     padding: 0 50px;
@@ -77,51 +77,32 @@ header{
     flex-direction: column;
     justify-content: center;
 }
-
-/* destacados */
-#destacados{
-    padding: 0px 50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-#destacados div{
-    padding: 30px 30px;
-    background-color: #6DA7D9;
-    border-radius: 30px;
-    margin: 10px;
-}
-#destacados div h4{
-    color: white;
-    font-size: 20px;
-    margin: 15px 0px;
-}
-#destacados div p{
-    color: white;
-    font-size: 18px;
-
-}
-.boton-saber-mas{
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding: 10px 30px;
-    border: 3px solid #BE3036;
-    border-radius: 30px;
-    margin-top: 15px;
-    background-color: #BE3036;
-    transition: all 0.4s;
-}
-.boton-saber-mas:hover{
-    border: 3px solid #BE3036;
-    background-color: #6DA7D9;
-    color: #BE3036;
-}
+/* balances*/
 .titulo_destacados{
     padding: 0px 50px;
     font-size: 20px;
     margin: 15px 0px;
     color: #545454;
+}
+.botonb{
+    display: flex;
+    padding: 0px 50px;
+    flex-direction: column;
+}
+#balances h4{
+    margin-top: 10px;
+    padding: 0px 50px;
+}
+.botonb a{
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    
+}
+.botonb a:hover{
+    padding: 15px;
+    text-decoration: none;
+    color: #6DA7D9;
 }
 /* telefonos*/
 .I-T{
@@ -230,7 +211,6 @@ footer{
     #check:checked ~ .menu{
         right: 0;
     }
-    
     /* destacados */
     #destacados{
         flex-direction: column;

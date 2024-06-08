@@ -8,7 +8,11 @@
     font-family: "LeagueSpartan";
     src: url(LeagueSpartan-VariableFont_wght.ttf);
 }
-
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
 /* header */
 header{
     height: 100px;
@@ -52,6 +56,52 @@ header{
     margin: 15px 0px;
     color: #545454;
 }
+.colum-contact{
+    padding: 0px 50px;
+    margin: 0.5em;
+    float: inline-start;
+    font-size: x-large;
+}
+.colum-contact p{
+    font-size: 18px;
+}
+.colum-contact hr{
+    width: 100%;
+}
+.colum-contact h5{
+    color: #545454;
+}
+/* footer */
+footer{
+    background: #545454;
+    height: 100;
+    padding-top: 40px;
+    color: white;
+}
+.footer-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive */
 @media(max-width: 768px ){
     /* header */
