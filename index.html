@@ -9,67 +9,97 @@
 </head>
 <body>
     <header>
-        <div>
-            <a href="index.html"><img src="logo.png" alt="" class="logo" width="90px"></a>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="" class="logo" width="120px"></a>
         </div>
         <input type="checkbox" id="check">
         <label for="check" class="mostrar-menu">
-            &#8801
+            &#8801;
         </label>
         <nav class="menu">
             <a href="sobre_pueblo.html">Sobre el pueblo</a>
-            <a href="institucional.html">Institucional</a>
-            <a href="http://munihumboldt.dynalias.org:5080/dashboard/">Trámites</a>
+            <div class="tramite-desplegable">
+                <a href="#" class="tramiteA">Institucional</a>
+                <div class="subtramites">
+                    <a href="#">Comuna</a>
+                    <a href="#">Juzgado</a>
+                    <a href="#">Centro de emision de licencias de conducir</a>
+                    <a href="#">Equipo local interdisciplinario</a>
+                    <a href="#">Policia de transito</a>
+                </div>
+            </div>
+            <div class="tramite-desplegable">
+                <a href="#" class="tramiteA">Trámites</a>
+                <div class="subtramites">
+                    <a href="#">Comercios</a>
+                    <a href="#">Estudios contables</a>
+                    <a href="#">Inmuebles urbanos</a>
+                    <a href="#">Inmuebles rurales</a>
+                    <a href="#">Vehículos</a>
+                    <a href="#">Expedientes</a>
+                    <a href="#">Formularios generales</a>
+                </div>
+            </div>
             <a href="balances.html">Balances</a>
             <a href="#">Fotos</a>
             <label for="check" class="esconder-menu">
-                &#215
+                &#215;
             </label>
         </nav>
     </header>
     <section id="banner">
         <div class="contenido-banner">
-            <h3><span>Sitio Web</span> del Jardín Florido de la Provincia</h3>
+            <h3><span>Sitio Web</span> de la Comuna de Humboldt</h3>
         </div>
     </section>
     <div class="titulo_destacados">
-        <h3>Destacados</h3>
+        <h3>Destacados</h3><hr>
     </div>
-    <hr>
     <section id="destacados">
         
-        <div>
+        <div class="destacados-a">
             <img src="destacado_1.png" alt="">
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, molestiae!</p>
-            <a href="#" class="boton-saber-mas">Saber Más</a>
+            <a href="https://www.instagram.com/p/C7ekOsiOq9o/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="boton-saber-mas">Saber Más</a>
         </div>
-        <div>
+        <div class="destacados-a">
             <img src="destacado_2.png" alt="">
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis?</p>
             <a href="#" class="boton-saber-mas">Saber Más</a>
         </div>
-        <div>
+        <div class="destacados-a">
             <img src="destacado_3.png" alt="">
-            <h4>Lorem ipsum dolor sit amet. </h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, deserunt.</p>
             <a href="#" class="boton-saber-mas">Saber Más</a>
         </div>
-        <div>
+        <div class="destacados-a">
             <img src="destacado_4.png" alt="">
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, corporis?</p>
             <a href="#" class="boton-saber-mas">Saber Más</a>
         </div>
+
     </section>
     <div class="titulo_destacados">
-        <h3>Telefonos Útiles</h3>
+        <h3>Conocé nuestros servicios, programas e iniciativas</h3>
+    </div>
+    <section id="servicios">
+        <div class="servicio">
+            <img src="recoleccion.jpg" alt="Recolección de residuos">
+            <a href="#"><h3>Recolección de residuos</h3></a>
+        </div>
+        <div class="servicio">
+            <img src="talleres.jpg" alt="Cursos y talleres">
+            <a href="#"><h3>Cursos y talleres</h3></a>
+        </div>
+        <div class="servicio">
+            <img src="espacios.jpg" alt="Espacios públicos">
+            <a href="#"><h3>Espacios públicos</h3></a>
+        </div>
+    </section>
+    
+    <div class="titulo_destacados">
+        <h3>Telefonos Útiles</h3>    <hr>
         <div class="boton-telefonos-responsive">
             <a href="telefonos.html" class="boton-saber-mas-telefonos-responsive">Ver todos</a>
         </div>
     </div>
-    <hr>
+
     
     <section id="telefonos">
         <div class="contenido-telefonos">
@@ -137,7 +167,47 @@
             <a href="telefonos.html" class="boton-saber-mas-telefonos">Ver todos</a>
         </div>
     </section>
-
+    <div class="titulo_destacados">
+        <h3>Contacto Institucional</h3><hr>
+    </div>
+    <section id="contacto-institucional">
+        <div class="contacto">
+            <img src="whatsapp.png" alt="WhatsApp">
+            <div>
+                <h4>Comuna</h4>
+                <a href="https://wa.me/5493496419799" target="_blank">3496419799</a>
+            </div>
+        </div>
+        <div class="contacto">
+            <img src="whatsapp.png" alt="WhatsApp">
+            <div>
+                <h4>Juzgado de Faltas</h4>
+                <a href="https://wa.me/5493496564861" target="_blank">3496564861</a>
+            </div>
+        </div>
+        <div class="contacto">
+            <img src="whatsapp.png" alt="WhatsApp">
+            <div>
+                <h4>Centro de emisión de licencia de conducir</h4>
+                <a href="https://wa.me/5493496508979" target="_blank">3496508979</a>
+            </div>
+        </div>
+        <div class="contacto">
+            <img src="whatsapp.png" alt="WhatsApp">
+            <div>
+                <h4>Equipo interdisciplinario</h4>
+                <a href="https://wa.me/5493496449487" target="_blank">3496449487</a>
+            </div>
+        </div>
+        <div class="contacto">
+            <img src="whatsapp.png" alt="WhatsApp">
+            <div>
+                <h4>Policía de tránsito</h4>
+                <a href="https://wa.me/5493496548174" target="_blank">3496548174</a>
+            </div>
+        </div>
+    </section>
+    
     <section id="FOOTER">
         <footer>
             <div class="footer-contenido">
