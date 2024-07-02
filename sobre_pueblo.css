@@ -1,4 +1,3 @@
-/* reset */
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +9,8 @@
 }
 
 /* header */
-header{
-    height: 100px;
+header {
+    height: 140px;
     background-color: #6DA7D9;
     padding: 0 50px;
     color: white;
@@ -19,30 +18,73 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.menu a{
+
+.menu a {
     color: white;
     text-decoration: none;
     font-family: "LeagueSpartan";
     padding: 0 10px;
     transition: 0.4s;
+    font-size: 18px;
 }
+
 .mostrar-menu,
-.esconder-menu{
+.esconder-menu {
     font-size: 30px;
     cursor: pointer;
     display: none; 
     transition: 0.4s;
 }
-.mostrar-menu{
+
+.mostrar-menu {
     order: 1;
 }
+
 .menu a:hover,
 .mostrar-menu:hover,
-.esconder-menu:hover{
+.esconder-menu:hover {
     color: #545454;
 }
-#check{
+
+#check {
     display: none;
+}
+
+.menu .tramite-desplegable {
+    position: relative;
+    display: inline-block;
+}
+
+.menu .tramiteA {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.menu .subtramites {
+    display: none;
+    position: absolute;
+    background-color: #6DA7D9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu .subtramites a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.4s;
+}
+
+.menu .subtramites a:hover {
+    background-color: #545454;
+}
+
+.menu .tramite-desplegable:hover .subtramites {
+    display: block;
 }
 
 /* telefonos-body */
@@ -60,37 +102,58 @@ header{
     color: #545454;
     margin-top: 10px;
     text-align: justify;
-    padding: 0px 50px;
+    padding: 0px 90px;
     font-size: 15px;
 }
-.columna1{
+.columna1 {
     display: flex;
+    align-items: center; 
     margin-top: 15px;
     text-align: center;
-    float: left;
-    width: 90%;
     padding: 0px 50px;
-}
-.columna1 img{
-    width: 95%;
-    border-radius: 10px;
-    height: auto;
-    text-align: center; 
-    margin: 0% 8.5%;
-}
-.imagenes-celu{
-    display: none;
+    justify-content: space-around; 
+    margin-top: 20px; 
+    padding: 0 20px; 
 }
 
+.columna1 a {
+    display: block;
+    width: 50%; 
+    margin: 0 10px;
+}
+
+.columna1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* footer */
+footer{
+    background: #545454;
+    height: 100;
+
+    color: white;
+    margin-top: 20px; 
+    padding-top: 20px; 
+}
+.footer-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 40px;
+}
 
 /* responsive */
 @media(max-width: 768px ){
     /* header */
     .mostrar-menu,
-    .esconder-menu{
+    .esconder-menu {
         display: block;
     }
-    .menu{
+    .menu {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -102,20 +165,62 @@ header{
         z-index: 100;
         transition: 0.8s;
     }
-    .menu a{
+    .menu a,
+    .menu .tramiteA {
         display: block;
         padding: 20px;
     }
-    .esconder-menu{
+    .esconder-menu {
         position: absolute;
         top: 40px;
         right: 40px;
     }
-    #check:checked ~ .menu{
+    #check:checked ~ .menu {
         right: 0;
     }
-       /* sobre el pueblo */
-    .columna1{
+    .menu .subtramites {
+        position: static;
+        background-color: #545454;
+        box-shadow: none;
+    }
+    .menu .subtramites a {
+        padding: 10px 0;   
+   
+    }
+    .menu .subtramites a:hover{
+        color: #6DA7D9;
+    }
+    .menu .tramite-desplegable {
+        display: block;
+    }
+    .menu .tramite-desplegable:hover .subtramites {
+        display: block;
+    }
+    .menu .subtramites {
         display: none;
+    }
+    .menu .tramite-desplegable:focus-within .subtramites {
+        display: block;
+    }
+    
+    .columna1 {
+        display: flex;
+        justify-content: center; 
+        flex-direction: column;
+        align-items: center; 
+        margin-top: 15px;
+        text-align: center;
+        padding: 0px 50px;
+    }
+    
+    .columna1 a {
+        display: block;
+        width: 80%; 
+        margin: 0 10px;
+    }
+    .columna1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
 }

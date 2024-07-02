@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: "LeagueSpartan";
-    src: url(LeagueSpartan-VariableFont_wght.ttf);
+    src: url(font/LeagueSpartan-VariableFont_wght.ttf);
 }
 
 /* header */
@@ -48,7 +48,7 @@ header{
 /*banner*/ 
 #banner{
     padding: 0 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("humboldt_aereo.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/humboldt_aereo.jpg");
     height: 55vh;
     background-size: cover;
     background-position: center;

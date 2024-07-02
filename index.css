@@ -297,15 +297,6 @@ header {
     padding-right: 10px; 
     border-right: 2px solid #545454;
 }
-#contato-a{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 200px;
-    margin-bottom: 20px;
-    padding-right: 10px; 
-}
-
 .contacto img {
     margin-right: 10px; 
 }
@@ -329,6 +320,37 @@ header {
 .contacto a:hover {
     color: #BE3036;
 }
+.contacto-a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 20px;
+    padding-right: 10px; 
+}
+.contacto-a img {
+    margin-right: 10px; 
+}
+
+.contacto-a div {
+    text-align: left; 
+    padding-left: 10px; 
+}
+
+.contacto-a h4 {
+    margin-bottom: 5px;
+    color: #545454;
+}
+
+.contacto-a a {
+    text-decoration: none;
+    color: #848181;
+    transition: color 0.4s;
+}
+
+.contacto-a a:hover {
+    color: #BE3036;
+}
 /* footer */
 footer{
     background: #545454;
@@ -346,7 +368,7 @@ footer{
 }
 /* responsive */
 @media(max-width: 768px ){
-        /* header */
+    /* header */
     .mostrar-menu,
     .esconder-menu {
         display: block;
@@ -378,11 +400,27 @@ footer{
     }
     .menu .subtramites {
         position: static;
-        background-color: #6DA7D9;
+        background-color: #545454;
         box-shadow: none;
     }
     .menu .subtramites a {
-        padding: 10px 0;
+        padding: 10px 0;   
+   
+    }
+    .menu .subtramites a:hover{
+        color: #6DA7D9;
+    }
+    .menu .tramite-desplegable {
+        display: block;
+    }
+    .menu .tramite-desplegable:hover .subtramites {
+        display: block;
+    }
+    .menu .subtramites {
+        display: none;
+    }
+    .menu .tramite-desplegable:focus-within .subtramites {
+        display: block;
     }
     /* destacados */
     #destacados{
@@ -409,6 +447,9 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .contenido-telefonos{
+        padding: 0px 0px;
+    }
     /* SERVICIOS */
     #servicios {
         flex-direction: column;
@@ -420,6 +461,7 @@ footer{
         width: 70%; 
         margin-bottom: 30px;
     }
+    /* contactio institucional */
     #contacto-institucional {
         padding: 20px;
     }

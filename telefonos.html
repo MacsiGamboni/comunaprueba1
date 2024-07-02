@@ -9,28 +9,62 @@
 </head>
 <body>
     <header>
-        <div>
-            <a href="index.html"><img src="logo.png" alt="" class="logo" width="90px"></a>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="" class="logo" width="120px"></a>
         </div>
         <input type="checkbox" id="check">
         <label for="check" class="mostrar-menu">
-            &#8801
+            &#8801;
         </label>
         <nav class="menu">
-            <a href="sobre_pueblo.html">Sobre el pueblo</a>
-            <a href="institucional.html">Institucional</a>
-            <a href="http://munihumboldt.dynalias.org:5080/dashboard/">Trámites</a>
+            <div class="tramite-desplegable">
+                <a href="sobre_pueblo.html">Sobre el pueblo &#x23F7</a>
+                <div class="subtramites">
+                    <a href="#">Reseña histórica</a>
+                    <a href="#">Actualidad</a>
+                    <a href="#">Cultura</a>
+                    <a href="#">Instituciones</a>
+                </div>
+            </div>
+            <div class="tramite-desplegable">
+                <a href="sobre_pueblo.html">Gobierno &#x23F7</a>
+                <div class="subtramites">
+                    <a href="#">Autoridades</a>
+                    <a href="#">Ordenanzas y resoluciones</a>
+                </div>
+            </div>
+            <div class="tramite-desplegable">
+                <a href="#" class="tramiteA">Secretarías &#x23F7</a>
+                <div class="subtramites">
+                    <a href="#">Comuna</a>
+                    <a href="#">Juzgado de faltas</a>
+                    <a href="#">Centro de emision de licencias de conducir</a>
+                    <a href="#">Equipo local interdisciplinario</a>
+                    <a href="#">Policia de transito</a>
+                </div>
+            </div>
+            <div class="tramite-desplegable">
+                <a href="#" class="tramiteA">Trámites &#x23F7</a>
+                <div class="subtramites">
+                    <a href="http://munihumboldt.dynalias.org:5080/cgi-bin/menucomercio.exe?ingreso" target="_blank">Comercios</a>
+                    <a href="http://munihumboldt.dynalias.org:5080/cgi-bin/menucontadores.exe?ingreso" target="_blank">Estudios contables</a>
+                    <a href="#">Inmuebles urbanos</a>
+                    <a href="#">Inmuebles rurales</a>
+                    <a href="#">Vehículos</a>
+                    <a href="#">Expedientes</a>
+                    <a href="#">Formularios generales</a>
+                </div>
+            </div>
             <a href="balances.html">Balances</a>
             <a href="#">Fotos</a>
             <label for="check" class="esconder-menu">
-                &#215
+                &#215;
             </label>
         </nav>
     </header>
     <div class="titulo_destacados">
-        <h3>Telefonos Útiles</h3>
+        <h3>Telefonos Útiles<hr></h3>
     </div>
-    <hr>
     <section id="telefonos">
         <div class="colum-contact">
         <p><h5>SAMCO</h5></p>
