@@ -2,17 +2,29 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "parrafos";
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url(HammersmithOne-Regular.ttf)
+}
+@font-face {
+    font-family: "Parrafos";
+    src: url(Roboto-Bold.ttf);
 }
 @font-face {
     font-family: "LeagueSpartan";
     src: url(LeagueSpartan-VariableFont_wght.ttf);
 }
-
+@font-face {
+    font-family: "Banner";
+    src: url(Roboto-Medium.ttf);
+}
 /* header */
 header {
     height: 140px;
-    background-color: #6DA7D9;
+    background-color: #62A1D9;
     padding: 0 50px;
     color: white;
     display: flex;
@@ -66,7 +78,7 @@ header {
 .menu .subtramites {
     display: none;
     position: absolute;
-    background-color: #6DA7D9;
+    background-color: #62A1D9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -88,6 +100,7 @@ header {
     display: block;
 }
 
+
 /*banner*/ 
 #banner{
     padding: 0 50px;
@@ -108,6 +121,7 @@ header {
     font-size: 30px;
     font-weight: 400;
     padding: 10px 0px;
+    font-family: "banner";
 }
 .contenido-banner h3 span{
     font-weight: 600;
@@ -121,6 +135,7 @@ header {
     flex-direction: column;
     justify-content: center;
 }
+
 /* balances*/
 .titulo_destacados{
     padding: 0px 50px;
@@ -128,25 +143,39 @@ header {
     margin: 15px 0px;
     color: #545454;
 }
-.botonb{
-    display: flex;
+.meses{
     padding: 0px 50px;
-    flex-direction: column;
+    margin-top: 0.2%;
+    margin-bottom: 2%;
 }
 #balances h4{
     margin-top: 10px;
     padding: 0px 50px;
 }
-.botonb a{
-    padding: 15px;
-    text-decoration: none;
-    color: black;
-    
+.month-list {
+    list-style-type: none;
+    padding: 0;
 }
-.botonb a:hover{
-    padding: 15px;
+.month-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+}
+.download-btn {
+    background-color: #BE3036;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
     text-decoration: none;
-    color: #6DA7D9;
+}
+.download-btn:hover {
+    background-color: transparent;
+    border: 2px solid #BE3036;
+    color: rgb(8, 8, 8);
 }
 /* telefonos*/
 .I-T{
@@ -183,7 +212,7 @@ header {
     padding: 10px 30px;
     border: 3px solid #BE3036;
     border-radius: 30px;
-    margin-top: 15px;
+    margin-top: 30px;
     background-color: #BE3036;
     transition: all 0.4s;
 }
@@ -305,7 +334,7 @@ footer{
        position: fixed;
        width: 100%;
        height: 100vh;
-       background: #6DA7D9;
+       background: #62A1D9;
        right: -100%;
        top: 0;
        text-align: center;
@@ -336,7 +365,7 @@ footer{
   
    }
    .menu .subtramites a:hover{
-       color: #6DA7D9;
+       color: #62A1D9;
    }
    .menu .tramite-desplegable {
        display: block;

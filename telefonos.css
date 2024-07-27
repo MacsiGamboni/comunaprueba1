@@ -2,11 +2,23 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "parrafos";
+}
+@font-face {
+    font-family: "titulo";
+    src: url(HammersmithOne-Regular.ttf)
+}
+@font-face {
+    font-family: "Parrafos";
+    src: url(Roboto-Bold.ttf);
 }
 @font-face {
     font-family: "LeagueSpartan";
     src: url(LeagueSpartan-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Banner";
+    src: url(Roboto-Medium.ttf);
 }
 body{
     display: grid;
@@ -16,7 +28,7 @@ body{
 /* header */
 header {
     height: 140px;
-    background-color: #6DA7D9;
+    background-color: #62A1D9;
     padding: 0 50px;
     color: white;
     display: flex;
@@ -70,7 +82,7 @@ header {
 .menu .subtramites {
     display: none;
     position: absolute;
-    background-color: #6DA7D9;
+    background-color: #62A1D9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -93,6 +105,7 @@ header {
 }
 /* telefonos-body */
 .titulo_destacados{
+    font-family: "titulo";
     padding: 0px 50px;
     font-size: 20px;
     margin: 15px 0px;
@@ -139,7 +152,7 @@ footer{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #6DA7D9;
+        background: #62A1D9;
         right: -100%;
         top: 0;
         text-align: center;
@@ -170,7 +183,7 @@ footer{
    
     }
     .menu .subtramites a:hover{
-        color: #6DA7D9;
+        color: #62A1D9;
     }
     .menu .tramite-desplegable {
         display: block;
